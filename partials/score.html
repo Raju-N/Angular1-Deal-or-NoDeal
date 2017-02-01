@@ -1,0 +1,21 @@
+<section class="container">
+	<section class="deallogo">
+		<a><img src="assets/images/dealGameTitleInitial.png" class="title" alt="Deal or Nodeal Logo"></a>
+		<div class="congratz">
+			<p class="congratzText">Congratz</p>
+			<p>
+				<span>{{playerName}}</span>
+			</p>
+			<p>
+				<span>You</span>
+				<span>Win</span>
+			</p>
+			<p class="amount"><img src="assets/images/inr.png">{{yourAmount | number}}</p>
+		</div>
+		<button class="playAgain" ng-click="playAgain()"></button>
+	</section>
+		
+	<section class="myAmt" ng-show="showMyAmount">
+		<h5>Your Box Amount: <img src="assets/images/inr1.png">{{boxAmount | number}}</h5>
+	</section>
+</section>
